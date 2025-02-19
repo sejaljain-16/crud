@@ -13,7 +13,7 @@ import common.DB_connection;
  */
 public class InsertVal {
     
-    public void InsertVal(String name, String studentid, String email, String dob,String phone){
+    public void insertVal(String name, String studentid, String email, String dob,String phone){
         DB_connection objDB = new DB_connection();
         Connection connection = objDB.get_connection();
         PreparedStatement ps = null;

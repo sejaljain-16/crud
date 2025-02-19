@@ -2,7 +2,6 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/JavaScript.js to edit this template
  */
-
 const name = document.getElementById('name');
 const studentid = document.getElementById('studentid');
 const email = document.getElementById('email');
@@ -91,13 +90,13 @@ phone.addEventListener('blur', () => {
 
 
 
-let btn = document.getElementById('btn');
+let btn = document.getElementById('btn2');
 btn.addEventListener('click', (e) => {
     e.preventDefault();
     console.log('clicked');
-    if (validname && validstudid && validemail && validdob && validphone) {
+    if (validname || validstudid || validemail || validdob || validphone) {
     console.log("All validations passed and preparing the form to submit..");
-     document.getElementById('insertform').submit(); 
+     document.getElementById('editedform').submit(); 
         let success = document.getElementById('success');
         success.classList.add('show');
         fail.classList.remove('show');
@@ -108,5 +107,4 @@ btn.addEventListener('click', (e) => {
     }
 
 })
-
 
